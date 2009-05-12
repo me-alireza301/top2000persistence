@@ -9,7 +9,7 @@ This library is meant as an example and can be used as a jar for example in a we
 
 = Usage =
 
-If you whish to use the in memory database provided with this library in your web application, you should include in your webapplication on the classpath a file named: local.config
+If you whish to use the in memory database provided with this library in your web application, you should include in your webapplication on the classpath a file named: *local.config*
 
 in this config file you should inculde something like the following parameters
 
