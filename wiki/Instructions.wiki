@@ -13,10 +13,10 @@ If you whish to use the in memory database provided with this library in your we
 
 in this config file you should inculde something like the following parameters
 
-ds_driverclassname	 org.hsqldb.jdbcDriver
-ds_url	 path-to-your-db-location/test
-ds_username	 sa
-ds_password	
-vendor_dbplatform	 org.hibernate.dialect.HSQLDialect
-showsql	 false
-generateddl	 false
+ ||ds_driverclassname || org.hsqldb.jdbcDriver  ||
+ ||ds_url ||            path-to-your-db-location/test||
+ ||ds_username ||       sa||
+ ||ds_password||  ||
+ ||vendor_dbplatform || org.hibernate.dialect.HSQLDialect ||
+ ||showsql||            false ||
+ ||generateddl||        false ||
