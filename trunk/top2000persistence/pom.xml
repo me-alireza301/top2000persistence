@@ -93,6 +93,19 @@
 	</dependencies>
 
 	<repositories>
+		<!--  BEGIN:Local config only -->
+		<repository>
+			<id>archiva.default</id>
+			<name>WoWWW Repository</name>
+			<layout>default</layout>
+			<url>http://archiva.wowww.nl:9999/archiva/repository/internal</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<checksumPolicy>warn</checksumPolicy>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
+		<!--  END:Local config only -->
 		<repository>
 			<id>java.net</id>
 			<url>http://download.java.net/maven/1</url>
@@ -131,6 +144,16 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
+
+	<!--  BEGIN:Local config only -->
+	<distributionManagement>
+		<repository>
+			<id>archiva.deploy</id>
+			<name>WoWWW Repository</name>
+			<url>scp://archiva.wowww.nl/home/maven/repositories/internal/</url>
+		</repository>
+	</distributionManagement>
+	<!--  END:Local config only -->
 
 	<build>
 		<defaultGoal>compile</defaultGoal>
